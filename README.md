@@ -1,0 +1,4 @@
+myPhonegapApp
+=============
+
+first app
