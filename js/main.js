@@ -35,7 +35,7 @@ showAlert: function (message, title) {
     initialize: function() {
 		var self = this;
 		this.store = new MemoryStore(function() {
-			self.showAlert('Store Initialized', 'Info');
+			self.showAlert('Store Initialized::::', 'Info');
 		});
 		$('.search-key').on('keyup', $.proxy(this.findByName, this));
     }
