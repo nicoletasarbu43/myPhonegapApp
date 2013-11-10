@@ -21,9 +21,9 @@ var app = {
 			$('body').on('touchstart', 'a', function(event) {
 				$(event.target).addClass('tappable-active');
 			});
-			$('body').on('touchend', 'a', function(event) {
+			/* $('body').on('touchend', 'a', function(event) {
 				$(event.target).removeClass('tappable-active');
-			});
+			}); */
 		} else {
 			// ... if not: register mouse events instead
 			$('body').on('mousedown', 'a', function(event) {
