@@ -25,7 +25,7 @@ var app = {
             if (this.homePage) {
                 this.slidePage(this.homePage);
             } else {
-                this.homePage = new HomeView(this.store).render();
+                this.homePage = new HomeView(this.store).render(); 
                 this.slidePage(this.homePage);
             }
             return;
