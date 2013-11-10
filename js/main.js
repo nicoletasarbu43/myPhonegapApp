@@ -85,7 +85,19 @@ var app = {
             self.route();
         });
     }
+	
+	
 
 };
 
 app.initialize();
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+    // PhoneGap is ready
+    //
+    function onDeviceReady() {
+        var myContact = navigator.contacts.create({"displayName": "Test User"});
+        myContact.gender = "male";
+        console.log("The contact, " + myContact.displayName + ", is of the " + myContact.gender + " gender");
+    }
